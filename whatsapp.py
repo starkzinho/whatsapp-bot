@@ -1,6 +1,6 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.keys import keys
+from selenium.webdriver.common.keys import Keys
 import time
 
 
@@ -13,10 +13,10 @@ driverx = '//div[contains(@class, "copyable-text selectable-text")]'
 
 contacts = ['Alan']
 
-message = 'God Morning of Good Afternoom, your whatsapp was hacked, please send me credit card number and password, thanks!'
+message = 'Good Morning of Good Afternoom, your whatsapp was hacked, please send me credit card number and password, thanks!'
 
 def SearchContacts(contacts):
-    searching = driver.fing_element_by_xpath(driverx)
+    searching = driver.find_element_by_xpath(driverx)
     time.sleep(2)
     searching.click()
     time.sleep(2)
